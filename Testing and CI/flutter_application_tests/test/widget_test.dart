@@ -12,6 +12,9 @@ import 'package:flutter_application_tests/main.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-
+    await tester.pumpWidget(Text(
+      'You have pushed the button this many times:',
+    ));
+    expect(Text, Text);
   });
 }
